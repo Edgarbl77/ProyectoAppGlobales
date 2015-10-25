@@ -1,4 +1,17 @@
 <div class="container">
   <h1>Bienvenido</h1>
 
+  <h3>Últimos reportes</h3>
+
+  <div class="panel panel-default" ng-repeat="reporte in reportes">
+    <div class="panel-body">
+      <img ng-src={{reporte.img}}>
+
+      <p class="title">{{reporte.titulo}}</p>
+
+      <p class="price">{{reporte.descripcion}}</p>
+
+      <p class="date">{{reporte.date | date}}</p>
+    </div>
+  </div>
 </div>
